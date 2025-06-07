@@ -19,6 +19,7 @@ import ProgressBar from "./components/constants/ProgressBar.jsx";
 import { useRefContext } from "./Context/RefContext/RefContext.jsx";
 import HotelDetails from "./components/routes/placesDetails/HotelDetails.jsx";
 import PlacesDetails from "./components/routes/placesDetails/PlacesDetails.jsx";
+import Banner from "./components/custom/Banner.jsx";
 
 function App() {
   const { user, isAuthenticated } = useContext(LogInContext);
@@ -146,6 +147,7 @@ function App() {
   return (
     <>
       <ProgressBar />
+      <Banner/>
       <div className="app tracking-tighter min-w-[320px]">
         <Header headerRef={headerRef} />
         <div className="container max-w-[1024px] w-full min-w-[320px] h-auto">
